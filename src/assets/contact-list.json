@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Rodel Garcia",
+    "email": "rodelgarcia11@gmail.com",
+    "phone_number": "+63 916 557 7288"
+  },
+  {
+    "id": 2,
+    "name": "John Smith",
+    "email": "john.smith@email.com",
+    "phone_number": "+65 9825 7805"
+  },
+  {
+    "id": 3,
+    "name": "John Doe",
+    "email": "john.doe@yahoo.com",
+    "phone_number": "+68 1212 1212"
+  }
+]

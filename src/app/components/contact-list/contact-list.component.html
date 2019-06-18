@@ -1,0 +1,25 @@
+<div>
+  <div class="input-group d-md-inline-block col-sm-12 col-md-4 py-3 px-0">
+    <input type="text" class="form-control" placeholder="Search contact" [(ngModel)]="searchText">
+  </div>
+  <div class="border d-md-inline-block col-sm-12 col-md-4 w-sm-50 py-3 px-0">
+  </div>
+  <ul class="list-group">
+    <li *ngFor="let contact of contactList | search:{name: searchText, email: searchText, phone_number: searchText}" 
+        class="list-group-item d-flex">
+      <div>
+        <h5>{{ contact.name }}</h5>
+        <span>{{ contact.email }}</span><br />
+        <span>{{ contact.phone_number }}</span>
+      </div>
+      <div class="ml-auto">
+        <button type="button" class="btn btn-outline-danger mr-3">
+          <i class="fa fa-trash"></i> Delete
+        </button>
+        <button type="button" class="btn btn-warning">
+          <i class="fa fa-edit"></i> Edit
+        </button>
+      </div>
+    </li>
+  </ul>
+<div>
